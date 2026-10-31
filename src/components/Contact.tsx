@@ -83,11 +83,11 @@ export function Contact() {
             <div className="mt-auto rounded-2xl border border-dashed border-accent/45 bg-accent-soft/30 p-5">
               <p className="flex items-center gap-2 font-mono text-[11px] text-accent">
                 <SparkleIcon className="h-3.5 w-3.5" />
-                Tip
+                Open to opportunities
               </p>
               <p className="mt-2 text-sm text-fg-muted">
-                Prefer a quick introduction? Send me a short message with what you are building
-                and I will reply with a time.
+                I welcome conversations about full-stack roles, product development, and thoughtful
+                collaborations.
               </p>
             </div>
           </div>
@@ -145,7 +145,11 @@ export function Contact() {
             </div>
 
             <p className="font-mono text-[11px] leading-relaxed text-fg-subtle">
-              This form opens your default email client — nothing is stored or sent to a server.
+              This static website cannot process form submissions. Please email me directly at{' '}
+              <a href={`mailto:${contact.email}`} className="text-accent hover:underline">
+                {contact.email}
+              </a>
+              .
             </p>
           </form>
         </Reveal>
@@ -204,9 +208,8 @@ function Field({
   required?: boolean;
   textarea?: boolean;
 }) {
-  const shared = `w-full rounded-xl border border-border bg-bg px-4 py-3 text-sm text-fg placeholder:text-fg-subtle transition-colors duration-200 outline-none focus:border-accent ${
-    textarea ? 'min-h-32 resize-y' : ''
-  }`;
+  const shared = `w-full rounded-xl border border-border bg-bg px-4 py-3 text-sm text-fg placeholder:text-fg-subtle transition-colors duration-200 outline-none focus:border-accent ${textarea ? 'min-h-32 resize-y' : ''
+    }`;
 
   return (
     <label className="block flex-1">

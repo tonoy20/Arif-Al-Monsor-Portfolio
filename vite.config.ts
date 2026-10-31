@@ -4,10 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath, URL } from 'node:url';
 
 // https://vite.dev/config/
-export default defineConfig({
-  // For a GitHub Pages project site use: '/your-repo-name/'
-  // For a user/org site (username.github.io) leave this as '/'.
-  base: '/Arif-Al-Monsor-Portfolio/',
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : '/Arif-Al-Monsor-Portfolio/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -18,4 +16,4 @@ export default defineConfig({
     outDir: 'dist',
     assetsInlineLimit: 2048,
   },
-});
+}));
