@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Arif Al Monsor Tonoy — Fullstack Web Developer &amp; Competitive Programmer</title>
+    <meta
+      name="description"
+      content="Portfolio of Arif Al Monsor Tonoy, a Bangladeshi fullstack web developer and competitive programmer with 2+ years of professional experience building web applications with React, Node.js and modern CSS."
+    />
+    <meta name="author" content="Arif Al Monsor Tonoy" />
+    <meta name="theme-color" content="#f2f0eb" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arif Al Monsor Tonoy — Fullstack Web Developer" />
+    <meta
+      property="og:description"
+      content="Fullstack web developer and competitive programmer. 2+ years of experience with React, Node.js and modern CSS."
+    />
+    <meta property="og:image" content="/images/profile-secondary.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Arif Al Monsor Tonoy — Fullstack Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Fullstack web developer and competitive programmer. 2+ years of experience with React, Node.js and modern CSS."
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/icon-512.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arif Al Monsor Tonoy",
+        "url": "https://tonoy20.github.io/",
+        "image": "/images/profile-main.jpg",
+        "jobTitle": "Fullstack Web Developer",
+        "email": "mailto:tonoyict20@gmail.com",
+        "telephone": "+8801761718015",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "BD"
+        },
+        "sameAs": [
+          "https://github.com/tonoy20",
+          "https://www.linkedin.com/in/arif-tonoy-597b451a4/",
+          "https://twitter.com/Monsor_Tonoy",
+          "https://www.instagram.com/arif_tonoy/"
+        ],
+        "knowsAbout": [
+          "React",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "MongoDB",
+          "MySQL",
+          "C",
+          "C++",
+          "Python"
+        ]
+      }
+    </script>
+
+    <!--
+      Applies the saved theme before React boots so the page never flashes the
+      wrong background colour. Do not remove.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme');
+          var dark =
+            stored === 'dark' ||
+            (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+            document
+              .querySelector('meta[name="theme-color"]')
+              .setAttribute('content', '#0c0c0f');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
