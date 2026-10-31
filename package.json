@@ -1,7 +1,7 @@
 {
   "name": "arif-al-monsor-portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Modern portfolio of Arif Al Monsor Tonoy — Fullstack Web Developer & Competitive Programmer",
   "scripts": {

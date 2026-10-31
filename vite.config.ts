@@ -7,7 +7,7 @@ import { fileURLToPath, URL } from 'node:url';
 export default defineConfig({
   // For a GitHub Pages project site use: '/your-repo-name/'
   // For a user/org site (username.github.io) leave this as '/'.
-  base: '/',
+  base: '/Arif-Al-Monsor-Portfolio/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
