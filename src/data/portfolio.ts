@@ -225,9 +225,9 @@ export const about = {
     { label: 'Status', value: 'Open to new work' },
   ],
   images: {
-    main: '/images/profile-main.jpg',
-    secondary: '/images/profile-secondary.jpg',
-    portrait: '/images/portrait.jpg',
+    main: `${import.meta.env.BASE_URL}images/profile-main.jpg`,
+    secondary: `${import.meta.env.BASE_URL}images/profile-secondary.jpg`,
+    portrait: `${import.meta.env.BASE_URL}images/portrait.jpg`,
   },
 };
 
@@ -544,7 +544,7 @@ export const projects: Project[] = [
     tagline: 'Fullstack e-commerce application',
     description:
       'A complete online shopping platform with product browsing, cart and checkout flows, secured with JSON Web Tokens so every user only sees their own orders. Built to practise authentication and data modelling end-to-end.',
-    image: '/images/projects/proshop.jpg',
+    image: `${import.meta.env.BASE_URL}images/projects/proshop.jpg`,
     tech: ['Node.js', 'MongoDB', 'JWT', 'Express'],
     category: 'fullstack',
     year: '2024',
@@ -559,7 +559,7 @@ export const projects: Project[] = [
     tagline: 'Desktop application for donor registration',
     description:
       'A blood bank management system that stores donor records and makes them searchable by blood group and location, so patients and donors can be matched quickly when someone actually needs help.',
-    image: '/images/projects/blood-management.jpg',
+    image: `${import.meta.env.BASE_URL}images/projects/blood-management.jpg`,
     tech: ['Java', 'JavaScript', 'XML', 'CSS'],
     category: 'fullstack',
     year: '2023',
@@ -578,7 +578,7 @@ export const projects: Project[] = [
     tagline: 'Responsive front-end built with React',
     description:
       'A clean, fully responsive restaurant site — menu, gallery and reservation sections — built as a first serious React project, with components split for reuse and layout that holds up on mobile.',
-    image: '/images/projects/restaurant.jpg',
+    image: `${import.meta.env.BASE_URL}images/projects/restaurant.jpg`,
     tech: ['React', 'HTML', 'CSS', 'Bootstrap'],
     category: 'frontend',
     year: '2023',
