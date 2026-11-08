@@ -140,9 +140,9 @@ export const site = {
   locale: 'en_US',
   resume: {
     label: 'Download CV',
-    href: '/resume/Arif-Al-Monsor-Resume.pdf',
+    href: `${import.meta.env.BASE_URL}resume/Arif-Al-Monsor-Resume.pdf`,
   },
-  favicon: '/favicon.ico',
+  favicon: `${import.meta.env.BASE_URL}favicon.ico`,
 } as const;
 
 /* -------------------------------------------------------------------------- */
